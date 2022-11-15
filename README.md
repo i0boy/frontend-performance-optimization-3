@@ -88,3 +88,11 @@ $ yarn serve
   - 이미지에 지연 로드 적용
   - intersection observer
 - 서버의 Cache Control
+- 이미지 파일이 너무 큼
+  - 가로 세로 사이즈를 줄여 이미지 용량을 줄이고 그만큼 더 빠르게 다운로드
+    - 가장클 때 기준으로 가로 세로 2배 정도
+    - 압축률은 70~80정도
+    - Effort는 기본값
+  - 이미지 포맷을 적절하게 선택
+
+[sqoosh](https://squoosh.app/editor)
