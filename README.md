@@ -169,6 +169,8 @@ CSS의 font-display 속성
 
 #### 캐시 최적화
 
+> Diagnostics 섹션의 Serve static assets with an efficient cache policy'
+
 캐시의 종류
 
 - 웹에서 사용하는 캐시는 크게 두 가지로 구분할 수 있습니다.
@@ -188,3 +190,17 @@ CSS의 font-display 속성
 
 > yarn build && yarn run serve 후 테스트 해야함
 > yarn start하면 안됨
+
+#### 불필요한 CSS 제거
+
+> Opportunities 섹션의 Reduced unused CSS
+
+- Lighthouse 대신 Coverage 패널 이용
+  - 페이지에서 사용하는 자바스크립트 및 CSS 리소스에서 실제로 실행하는 코드가 얼마나 되는지 알려주며 그 비율을 표시해줌
+- purgeCSS
+
+--output은 동일한 위치를 지정하여 기존 CSS 덮어씀
+--content는 리스트로 html과 모든 js파일들
+이렇게 하면 빌드된 HTML과 자바스크립트 파일의 텍스트 키워드를 모두 추출하여 빌드된 CSS 파일의 클래스와 비교하고 최적화
+
+코드의 실행 비율은 조금씩 증가함
