@@ -153,7 +153,16 @@ CSS의 font-display 속성
   - woff2
 - 필요한 문자의 폰트만 로딩하기
   - 서브셋 폰트 사용
+  - Data-URL 형태
 
 운영체제 폰트 포맷 TTF, OTF는 매번 리소스를 다운로드해야 하는 웹 환경에서는 적절하지 않음
 웹을 위한 폰트 WOFF(web open font format)/ WOFF2
 [Transfonter](https://transfonter.org)
+
+- Data-URL이란?
+  - data 스킴이 접두어로 붙은 문자열 형태의 데이터
+  - 파일을 문자열 형태로 변환하여 문서에 인라인으로 삽입
+  - 데이터 URL 형태로 만들어 App.css 파일에 넣어두면 별도의 네트워크 로드 없이 App.css 파일에서 폰트를 사용할 수 있음
+  - 항상 좋은 방식은 아님
+    - 인라인한 파일 크기만큼 App.css파일 다운로드가 느려짐
+    - 서브셋으로 만들고 인라인 추천
