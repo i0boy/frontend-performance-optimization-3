@@ -1,5 +1,5 @@
 import React from "react";
-import { useObserve } from "../useOvserve";
+import { useObserve } from "../useObserve";
 function Card(props) {
   const imgRef = useObserve(React.useRef(null));
 

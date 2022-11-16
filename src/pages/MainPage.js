@@ -17,7 +17,7 @@ import main_styles_webp from "../assets/main-styles.webp";
 import main1_webp from "../assets/main1.webp";
 import main2_webp from "../assets/main2.webp";
 import main3_webp from "../assets/main3.webp";
-import { useObserve } from "../useOvserve";
+import { useObserve } from "../useObserve";
 
 function MainPage(props) {
   const imgEl1 = useObserve(React.useRef(null));
